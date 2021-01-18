@@ -2,6 +2,7 @@ package com.example.hamburgeradministration.service;
 
 import com.example.hamburgeradministration.model.Reservation;
 import com.example.hamburgeradministration.repository.ReservationsRepository;
+import lombok.extern.log4j.Log4j2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@Log4j2
 public class ReservationsService {
-    private static final Logger LOGGER= LoggerFactory.getLogger(ReservationsService.class);
 
     @Autowired
     ReservationsRepository reservationsRepository;

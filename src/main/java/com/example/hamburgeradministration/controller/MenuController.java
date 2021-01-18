@@ -2,6 +2,7 @@ package com.example.hamburgeradministration.controller;
 
 import com.example.hamburgeradministration.model.Menu;
 import com.example.hamburgeradministration.service.MenuService;
+import lombok.extern.log4j.Log4j2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +11,8 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/menu")
+@Log4j2
 public class MenuController {
-    private static final Logger LOGGER= LoggerFactory.getLogger(MenuController.class);
 
     @Autowired
     MenuService menuService;
